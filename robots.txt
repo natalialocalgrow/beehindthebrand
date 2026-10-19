@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://natalialocalgrow.github.io/beehindthebrand/sitemap.xml
