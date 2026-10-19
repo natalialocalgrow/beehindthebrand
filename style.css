@@ -5,17 +5,17 @@
 /* ---------- Tipografías (alojadas en la propia web: sin Google Fonts) ---------- */
 @font-face {
   font-family: "Bricolage Grotesque";
-  src: url("fonts/bricolage-grotesque-latin-800-normal.woff2") format("woff2");
-  font-weight: 800; font-style: normal; font-display: swap;
+  src: url("bricolage-grotesque-latin-600-normal.woff2") format("woff2");
+  font-weight: 600; font-style: normal; font-display: swap;
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("fonts/dm-sans-latin-400-normal.woff2") format("woff2");
+  src: url("dm-sans-latin-400-normal.woff2") format("woff2");
   font-weight: 400; font-style: normal; font-display: swap;
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("fonts/dm-sans-latin-500-normal.woff2") format("woff2");
+  src: url("dm-sans-latin-500-normal.woff2") format("woff2");
   font-weight: 500; font-style: normal; font-display: swap;
 }
 
@@ -81,8 +81,8 @@ a { color: inherit; text-underline-offset: 3px; }
 }
 
 /* ---------- Tipografía ---------- */
-h1, h2, h3 { font-family: var(--display); font-weight: 800; margin: 0; letter-spacing: -0.03em; text-wrap: balance; }
-h2 { font-size: clamp(32px, 5vw, 50px); line-height: 1.06; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; margin: 0; letter-spacing: -0.02em; text-wrap: balance; }
+h2 { font-size: clamp(28px, 4.2vw, 40px); line-height: 1.12; }
 h3 { font-size: 23px; line-height: 1.15; letter-spacing: -0.02em; }
 p { margin: 0 0 var(--space-4); }
 
@@ -143,7 +143,7 @@ p { margin: 0 0 var(--space-4); }
   color: var(--tierra); margin-bottom: var(--space-4);
 }
 @media (min-width: 700px) { .h1-kicker { letter-spacing: 0.36em; } }
-.h1-main { display: block; font-size: clamp(42px, 6.4vw, 74px); line-height: 0.98; letter-spacing: -0.04em; }
+.h1-main { display: block; font-size: clamp(36px, 5.2vw, 58px); line-height: 1.05; letter-spacing: -0.025em; }
 .h1-main mark { background: none; color: inherit; position: relative; white-space: nowrap; isolation: isolate; }
 .h1-main mark::after {
   content: ""; position: absolute; left: -2px; right: -2px; bottom: 0.06em; height: 0.26em;
@@ -157,7 +157,7 @@ p { margin: 0 0 var(--space-4); }
 .comb .panel { fill: var(--miel); }
 .comb .hx { fill: var(--crema); }
 .comb .hx--you { fill: var(--negro-colmena); }
-.comb .hx-label { font-family: var(--display); font-weight: 800; font-size: 22px; fill: var(--miel); letter-spacing: -0.02em; }
+.comb .hx-label { font-family: var(--display); font-weight: 600; font-size: 22px; fill: var(--miel); letter-spacing: -0.02em; }
 .comb .trail { fill: none; stroke: var(--negro-colmena); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 0 9; }
 .comb figcaption { text-align: center; color: var(--tierra); font-size: 15px; margin-top: 6px; }
 @media (prefers-reduced-motion: no-preference) {
@@ -170,7 +170,7 @@ p { margin: 0 0 var(--space-4); }
 .promise ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 @media (min-width: 760px) { .promise ul { grid-template-columns: auto 1fr 1fr 1fr; align-items: center; gap: 28px; } }
 .promise .promise-intro { font-weight: 500; color: var(--crema-suave); font-size: 15px; }
-.promise li:not(.promise-intro) { display: flex; align-items: center; gap: 12px; font-family: var(--display); font-weight: 800; font-size: 20px; letter-spacing: -0.02em; line-height: 1.15; }
+.promise li:not(.promise-intro) { display: flex; align-items: center; gap: 12px; font-family: var(--display); font-weight: 600; font-size: 20px; letter-spacing: -0.02em; line-height: 1.15; }
 .promise li:not(.promise-intro)::before { content: ""; flex: none; width: 22px; height: 20px; background: var(--miel); clip-path: var(--hex); }
 
 /* ---------- Secciones ---------- */
@@ -184,13 +184,16 @@ section { padding-block: clamp(60px, 8vw, 112px); }
 .card { background: var(--blanco); border: 1px solid var(--borde); border-radius: var(--radius-l); padding: var(--space-6); }
 .card h3 { margin-bottom: var(--space-2); }
 .card p { margin: 0; color: var(--tierra); }
-.card .quote { font-family: var(--display); font-weight: 800; font-size: 15px; letter-spacing: 0; color: var(--tierra); margin-bottom: 10px; display: block; }
-.closing { margin-top: var(--space-10); font-family: var(--display); font-weight: 800; font-size: clamp(24px, 3.4vw, 34px); line-height: 1.15; letter-spacing: -0.025em; max-width: 24em; }
+.card .quote { font-family: var(--display); font-weight: 600; font-size: 15px; letter-spacing: 0; color: var(--tierra); margin-bottom: 10px; display: block; }
+.closing { margin-top: var(--space-10); font-family: var(--display); font-weight: 600; font-size: clamp(22px, 3vw, 28px); line-height: 1.2; letter-spacing: -0.02em; max-width: 24em; }
 
 /* ---------- Manifiesto ---------- */
 .manifesto { background: var(--negro-colmena); color: var(--crema); position: relative; overflow: hidden; }
 .manifesto .overline { color: var(--crema-suave); }
-.manifesto blockquote { margin: 0; max-width: 30em; font-family: var(--display); font-weight: 800; font-size: clamp(26px, 3.8vw, 42px); line-height: 1.15; letter-spacing: -0.03em; }
+.manifesto blockquote { margin: 0; max-width: 30em; }
+.manifesto blockquote p:first-child { font-family: var(--display); font-weight: 600; font-size: clamp(22px, 3vw, 32px); line-height: 1.25; letter-spacing: -0.015em; margin-bottom: 1em; }
+.manifesto blockquote p:not(:first-child) { font-family: var(--body, "DM Sans", sans-serif); font-weight: 400; font-size: clamp(18px, 2.2vw, 22px); line-height: 1.55; color: var(--crema-suave, var(--crema)); }
+.manifesto blockquote p:last-child { color: var(--crema); font-weight: 500; }
 .manifesto blockquote p { margin: 0 0 0.7em; }
 .manifesto blockquote p:last-child { margin: 0; }
 .manifesto em { font-style: normal; color: var(--miel); }
@@ -252,7 +255,7 @@ section { padding-block: clamp(60px, 8vw, 112px); }
 .hitos .hex-badge {
   width: 78px; height: 70px; margin: 0 auto 10px; display: grid; place-items: center;
   background: var(--negro-colmena); clip-path: var(--hex);
-  font-family: var(--display); font-weight: 800; font-size: 22px;
+  font-family: var(--display); font-weight: 600; font-size: 22px;
 }
 .hitos .hex-badge span { width: 70px; height: 62px; display: grid; place-items: center; clip-path: var(--hex); background: var(--crema); }
 .hitos li:nth-child(1) .hex-badge span { background: var(--miel); }
@@ -288,7 +291,7 @@ section { padding-block: clamp(60px, 8vw, 112px); }
 .ticket dl div { display: grid; gap: 2px; padding-bottom: 14px; border-bottom: 1px dashed var(--borde); }
 .ticket dl div:last-child { border-bottom: 0; padding-bottom: 0; }
 .ticket dt { font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--tierra); font-weight: 500; }
-.ticket dd { margin: 0; font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1.2; letter-spacing: -0.02em; }
+.ticket dd { margin: 0; font-family: var(--display); font-weight: 600; font-size: 22px; line-height: 1.2; letter-spacing: -0.02em; }
 .ticket dd small { display: block; font-family: var(--sans); font-weight: 400; font-size: 15px; letter-spacing: 0; color: var(--tierra); margin-top: 2px; }
 .ticket .btn { width: 100%; }
 .ticket .fine { margin: var(--space-4) 0 0; font-size: 14px; line-height: 20px; color: var(--tierra); }
@@ -363,7 +366,7 @@ section { padding-block: clamp(60px, 8vw, 112px); }
 @media (min-width: 960px) { .faq-layout { grid-template-columns: 0.75fr 1.25fr; gap: var(--space-10); } }
 .faq details { border-bottom: 1px solid #dccfb0; }
 .faq details:first-of-type { border-top: 1px solid #dccfb0; }
-.faq summary { list-style: none; cursor: pointer; padding: 20px 44px 20px 0; position: relative; font-family: var(--display); font-weight: 800; font-size: 20px; line-height: 1.25; letter-spacing: -0.02em; }
+.faq summary { list-style: none; cursor: pointer; padding: 20px 44px 20px 0; position: relative; font-family: var(--display); font-weight: 600; font-size: 20px; line-height: 1.25; letter-spacing: -0.02em; }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary::after {
   content: "+"; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
@@ -390,7 +393,7 @@ section { padding-block: clamp(60px, 8vw, 112px); }
 .site-footer a { color: var(--crema); }
 .foot-brand { display: flex; align-items: center; gap: var(--space-4); }
 .foot-brand img { width: 56px; height: 56px; background: var(--crema); border-radius: var(--radius-pill); padding: 2px; }
-.foot-brand strong { font-family: var(--display); font-weight: 800; font-size: 20px; letter-spacing: -0.02em; display: block; }
+.foot-brand strong { font-family: var(--display); font-weight: 600; font-size: 20px; letter-spacing: -0.02em; display: block; }
 .foot-brand span { color: var(--crema-suave); }
 .foot-links { display: flex; flex-wrap: wrap; gap: 10px 24px; }
 .legal-line { grid-column: 1 / -1; border-top: 1px solid #4a4236; padding-top: var(--space-4); margin: 0; font-size: 13px; line-height: 20px; color: var(--crema-suave); }
@@ -398,7 +401,7 @@ section { padding-block: clamp(60px, 8vw, 112px); }
 /* ---------- Páginas de texto (legales, 404) ---------- */
 .doc { padding-block: clamp(40px, 6vw, 72px); }
 .doc .wrap { max-width: 780px; }
-.doc h1 { font-size: clamp(34px, 6vw, 54px); line-height: 1.05; margin-bottom: var(--space-4); }
+.doc h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.05; margin-bottom: var(--space-4); }
 .doc h2 { font-size: 25px; line-height: 1.2; margin: var(--space-10) 0 10px; }
 .doc ul { padding-left: 1.2em; margin: 0 0 var(--space-4); }
 .doc li { margin-bottom: 6px; }
